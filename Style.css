@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif, 'Poppins';
+    background-color: #3479C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    background-color: #3C87E2;
+    padding: 20px;
+    border-radius: 20px;
+    width: 310px; /* estirar */
+    height: 223px;
+    color: black;
+    position: relative;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.song-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.text-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text-info p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.lyrics {
+    font-size: 19px;
+    line-height: 1.5;
+    font-family: 'Poppins';
+}
+
+.spotify-logo {
+    position: absolute; 
+    bottom: 1px; 
+    left: 17px; 
+}
+
+.spotify-logo img {
+    width: 70px;
+}
+
+#lyrics-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+#music-play {
+    display: block;
+    background-color: #3C87E2;
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    font-size: 11px;
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.corner-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.corner-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+        .container {
+            position: relative;
+        }
+
+        #music-play {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px; /* Espacio adicional para el botón */
+        }
+
+        #progress-container {
+            width: 100%;
+            max-width: 300px;
+            background-color: #3479C7;
+            border-radius: 20px;
+            height: 10px;
+            position: absolute;
+            bottom: 10px; /* Mueve la barra de progreso un poco más abajo */
+            left: 50%;
+            transform: translateX(-50%);
+            display: none; /* Ocultado por defecto */
+        }
+
+        #progress-bar {
+            width: 0;
+            height: 100%;
+            background-color: #1A3C62;
+            border-radius: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Asegúrate de que las letras no cambien de posición */
+        .lyrics {
+            text-align: left; /* Ajusta la alineación según el diseño original */
+            margin: 0 auto; /* Centro horizontal, solo si es necesario */
+        }
